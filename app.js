@@ -4,14 +4,14 @@ function displayClock() {
     var hours = time.getHours();
     var minutes = time.getMinutes();
     var seconds = time.getSeconds();
-    var dayNight = "PM";
+    var dayNight = "AM";
 
     if (hours > 12) {
         hours = hours - 12;
     }
 
     if (hours < 12) {
-        dayNight = "AM";
+        dayNight = "PM";
     }
 
     if (hours == 0) {
